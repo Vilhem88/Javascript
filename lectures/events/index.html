@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .error{
+        color: red;
+    }
+    .success{
+        color: green;
+    }
+
+
+
+  </style>
+  <body>
+    <div id="main">I am a software</div>
+    <div id="mouseOver">Mouse Over</div>
+    <button type="button" id="awardBtn">Click to get award</button>
+
+    <div style="margin-top: 10px">
+      <form action="" method="GET" id="userForm">
+        <label for="">Name</label>
+        <input type="text" name="name" id="name" />
+
+        <label for="">Lastname</label>
+        <input type="text" name="lastname" id="lastname" />
+
+        <select name="" id="age">
+          <option value="18">18</option>
+          <option value="19-25">19 > 25</option>
+          <option value="26-56">26 > 56</option>
+          <option value="57">> 57</option>
+        </select>
+
+        <button>Submit</button>
+      </form>
+
+      <a href="https://www.codewars.com/" id="help">Help</a>
+    </div>
+    <h1 id="h1Tag">Hello</h1>
+    <button id="click">Click me</button>
+    <button id="hover">Hover me</button>
+
+    <!-- --------------------------------------------------------------- -->
+    <div style="margin-top: 100px">New Form
+      <form action="" method="post" id="formSecond">
+        <div class="error">
+        <label for=""  >First Name</label>
+        <input type="text" id="firstname" />
+        <!-- <div id="error"></div> -->
+    </div>
+    <div class="error"></div>
+        <label for="">Last Name</label>
+        <input type="text" id="surname" style="margin-top:10px" />
+        <!-- <div class="error"></div> -->
+    </div>
+        <select name="" id="ageYear" style="margin-top: 10px" >
+          <option value="18">18</option>
+          <option value="19-25">19 > 25</option>
+          <option value="26-56">26 > 56</option>
+          <option value="57">> 57</option>
+        </select>
+        <br />
+        <label for="">City</label>
+        <input type="text" id="city" style="margin-top:10px" />
+        <div style="margin-top:10px">
+        <button>Submit</button>
+    </div>  
+    </form>
+    </div>
+
+    <script src="./events.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quick Quiz -- Start</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  
+  </head>
+  <body  id="mainContainer">
+    <div class="container">
+      <div class="text-center mt-5">
+        <img src="./loader/loader_quiz.gif" alt="" id="loader">
+      </div>
+      <div id="game" class="mt-5 text-center" style="display:none">
+        <div id="hud" class="d-flex justify-content-between">
+          <div id="hudItemQuestion">
+            <h3 class="hud-prefix text-center  text-secondary">Question</h3>
+            <h1 class="hud-main-text text-center  text-secondary" id="questionCounter"></h1>
+          </div>
+          <div id="hudItemScore">
+            <h3 class="hud-prefix text-center  text-secondary">Score</h3>
+            <h1 class="hud-main-text text-center  text-secondary" id="questionScore">0</h1>
+          </div>
+        </div>
+        <h2 id="question" class="text-secondary"></h2>
+        <div class="choice-container d-flex offset-4 mt-5">
+          <p class="choice-prefix p-2 border border-5 bg-white h4  text-secondary">A</p>
+          <p class="choice-text p-2" data-number="1"></p>
+        </div>
+        <div class="choice-container d-flex offset-4 mt-5">
+          <p class="choice-prefix p-2 border border-5 bg-white h4  text-secondary">B</p>
+          <p class="choice-text p-2" data-number="2"></p>
+        </div>
+        <div class="choice-container d-flex offset-4 mt-5">
+          <p class="choice-prefix p-2 border border-5 bg-white h4  text-secondary">C</p>
+          <p class="choice-text p-2" data-number="3"></p>
+        </div>
+        <div class="choice-container d-flex offset-4 mt-5">
+          <p class="choice-prefix p-2 border border-5 bg-white h4  text-secondary">D</p>
+          <p class="choice-text p-2" data-number="4"></p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./game.js"></script>
+  </body>
+</html>
